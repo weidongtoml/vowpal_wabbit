@@ -246,7 +246,7 @@ struct vw {
   void (*print_text)(int, string, v_array<char>);
   loss_function* loss;
 
-  char* program_name; // program name, eq. to argv[0].
+  char* program_name;
 
   bool stdin_off;
 

@@ -28,16 +28,7 @@ namespace VW {
    */
   void finish(vw& all);
 
-  /**
-   * start_parser: initializes the necessary data structures and creates a thread and starts 
-   * the main_parse_loop, which loops to prepare the example and signal the related process
-   * to start processing.
-   */
   void start_parser(vw& all, bool do_init = true);
-
-  /**
-   * end_parser: joins the parser thread to the main thread.
-   */
   void end_parser(vw& all);
 
   typedef pair< unsigned char, vector<feature> > feature_space; //just a helper definition.

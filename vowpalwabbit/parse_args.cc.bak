@@ -732,9 +732,6 @@ void parse_search(vw& all, po::variables_map& vm, bool& got_cs, bool& got_cb)
   }
 }
 
-/**
- * add_to_args: adds all the command line arguments to all.args
- */
 void add_to_args(vw& all, int argc, char* argv[])
 {
   for (int i = 1; i < argc; i++)

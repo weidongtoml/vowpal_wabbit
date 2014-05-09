@@ -50,19 +50,7 @@ namespace LEARNER
     learner* base;
     void (*finish_example_f)(vw&, void* data, example&);
   };
-
-  /**
-  * generic_driver: initializes the learner using all->l->init_driver,
-  * then continue to the learning loop in which,
-  *   VW::get_example(all->p) is invoked to retrieve the example
-  *   all->l->learn(*es) is called to do the learning
-  *   all->l->finish_example(*all, *ec) is invoked to notify the end of procesing.
-  * Depending on the type of sample encountered, the following methods will
-  * be invoked instead:
-  *  all->l->end_pass(), if ec->end_pass
-  *  save_predictor(*all, final_regressor_name, 0), if ec->tag begins with "save".
-  *  VW::finish_example(*all,ec);
-  */
+  
   void generic_driver(vw* all);
   
   inline void generic_sl(void*, io_buf&, bool, bool) {}

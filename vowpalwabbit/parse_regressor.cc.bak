@@ -296,11 +296,6 @@ void finalize_regressor(vw& all, string reg_name)
   }
 }
 
-/**
- * parse_regressor_args: process regressor related arguments, and save / load the regressor header:
- *  --initial_regressor
- *  --input_feature_regularizer
- */
 void parse_regressor_args(vw& all, po::variables_map& vm, io_buf& io_temp)
 {
   vector<string> regs;

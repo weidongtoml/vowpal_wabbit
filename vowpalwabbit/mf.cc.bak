@@ -17,9 +17,6 @@ using namespace std;
 
 using namespace LEARNER;
 
-/**
-* Learner for Matrix Factorization.
-*/
 namespace MF {
 
 struct mf {
